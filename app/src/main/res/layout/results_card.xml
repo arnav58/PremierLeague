@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#33CCCC"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_team"
+        android:background="@drawable/layout_bg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/first_team_name"
+            android:text="Team Name"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/applogo"
+            android:layout_toRightOf="@+id/first_team_name"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/results"
+        android:layout_toRightOf="@id/home_team"
+        android:text="1-0"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="24sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/away_team"
+        android:layout_toRightOf="@+id/results"
+        android:background="@drawable/layout_bg"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/applogo"
+            android:id="@+id/fixtureLayoutImage"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/second_team_name"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:text="Team Name"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</RelativeLayout>

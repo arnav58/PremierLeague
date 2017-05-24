@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:background="#33CCCC"
+    tools:context=".Activities.HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/homescreenlogo"
+                android:id="@+id/headerimage"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_fixtures"
+                android:background="@drawable/layout_bg"
+                android:layout_below="@+id/headerimage"
+                android:layout_marginTop="24dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/applogo"
+                    android:id="@+id/fixtureLayoutImage"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Fixtures"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/fixtureLayoutImage"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="24sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/fixtureLayoutImage"
+                    android:background="#EEEEEE"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_fixtures"
+                android:id="@+id/rl_results"
+                android:background="@drawable/layout_bg"
+                android:layout_marginTop="16dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/applogo"
+                    android:id="@+id/resultlayoutImage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Results"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/resultlayoutImage"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="24sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/resultlayoutImage"
+                    android:background="#EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_results"
+                android:id="@+id/rl_players"
+                android:background="@drawable/layout_bg"
+                android:layout_marginTop="16dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/applogo"
+                    android:id="@+id/tableLayoutImage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Players"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/tableLayoutImage"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="24sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/tableLayoutImage"
+                    android:background="#EEEEEE"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
